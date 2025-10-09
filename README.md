@@ -22,7 +22,8 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin
 
 Carry = AB + ACin + BCin
 
-![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
+<img width="774" height="544" alt="image" src="https://github.com/user-attachments/assets/49df58a0-c5cb-4224-b1d9-cd4daecdb948" />
+
 
 **Figure -1 FULL ADDER**
 
@@ -30,26 +31,38 @@ Carry = AB + ACin + BCin
 
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
 
-![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
+<img width="825" height="566" alt="image" src="https://github.com/user-attachments/assets/1eca81aa-52cb-42c9-909f-ee9a05bdf0f8" />
+
 
 Diff = A ⊕ B ⊕ Bin 
 
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+<img width="429" height="395" alt="image" src="https://github.com/user-attachments/assets/a62745df-4943-45f9-b57b-46d777b1a355" />
+<img width="438" height="393" alt="image" src="https://github.com/user-attachments/assets/5e6cec74-be2e-46fa-9c6b-2b5128fb47bf" />
 
 **Procedure**
 
-Write the detailed procedure here
+Type the program in Quartus software.
+
+Compile and run the program.
+
+Generate the RTL schematic and save the logic diagram.
+
+Create nodes for inputs and outputs to generate the timing diagram.
+
+For different input combinations generate the timing diagram.
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+ module JK(J,K,Qt,Y); input J,K,Qt; output Y; assign Y = J & ~Qt | ~K & Qt; endmodul
 
 **RTL Schematic**
+<img width="1177" height="744" alt="image" src="https://github.com/user-attachments/assets/3df96d52-8a61-4e77-9b8e-ffb2b7fcb366" />
+<img width="1351" height="542" alt="image" src="https://github.com/user-attachments/assets/f3bf8d43-3396-4b6e-9333-017eb0503773" />
 
 **Output Timing Waveform**
+<img width="1920" height="1201" alt="image" src="https://github.com/user-attachments/assets/4b4372ce-088c-441a-b494-f40e58d377fd" />
 
 **Result:**
 
