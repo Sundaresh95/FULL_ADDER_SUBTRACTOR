@@ -55,7 +55,16 @@ Create nodes for inputs and outputs to generate the timing diagram.
 For different input combinations generate the timing diagram.
 
 **Program:**
- module JK(J,K,Qt,Y); input J,K,Qt; output Y; assign Y = J & ~Qt | ~K & Qt; endmodul
+
+module JK(J,K,Qt,Y);
+
+input J,K,Qt;
+
+output Y;
+
+assign Y = J & ~Qt | ~K & Qt;
+
+endmodul
 
 **RTL Schematic**
 <img width="1177" height="744" alt="image" src="https://github.com/user-attachments/assets/3df96d52-8a61-4e77-9b8e-ffb2b7fcb366" />
